@@ -1,0 +1,69 @@
+header {
+    background: #050044;
+    color: #fff;
+}
+a {
+    color: #fff;
+}
+.header-1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 11px 40px 11px 40px;
+}
+.element-list {
+    display: flex;
+}
+.element-list > li:not(:last-child) {
+    margin-right: 20px;
+}
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+.element-list-2 {
+    display: flex;
+}
+.element-list-2 > div:not(:last-child) {
+    margin-right: 40px;
+}
+.app-btn {
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #F75200;
+    border-radius: 30px;
+    font-weight: 700;
+}
+.dropdown-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-main > .active > img {
+    transition: all 0.3s ease;
+    transform: rotate(180deg);
+}
+.dropdown-title {
+    display: flex;
+    justify-content: center;
+}
+.dropdown-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    top: 35px;
+}
+.dropdown-elements > a {
+    color: #000;
+}

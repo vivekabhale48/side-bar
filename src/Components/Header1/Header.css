@@ -1,8 +1,8 @@
-header {
+.Header-Desktop {
     background: #050044;
     color: #fff;
 }
-a {
+.Header-Desktop a {
     color: #fff;
 }
 .header-1 {

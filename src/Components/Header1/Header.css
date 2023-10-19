@@ -25,6 +25,9 @@ a {
 .element-list-2 {
     display: flex;
 }
+.element-list-2 >   div {
+    cursor: pointer;
+}
 .element-list-2 > div:not(:last-child) {
     margin-right: 40px;
 }
@@ -66,4 +69,10 @@ a {
 }
 .dropdown-elements > a {
     color: #000;
+}
+
+@media (max-width: 1024px) {
+    .Header-Desktop {
+        display: none;
+    }
 }

@@ -1,0 +1,108 @@
+footer {
+    background: #F7F7F7;
+    padding-bottom: 40px;
+}
+.section-1 {
+    max-width: 1024px;
+    margin: 60px auto 0px;
+}
+.content-1 {
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.download-pack h4 {
+    margin-bottom: 10px;
+}
+.description {
+    margin-top: 60px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 16px 16px 20px;
+    border-bottom: 1px solid #DCDCDC;;
+}
+.section-2 {
+    margin: 60px auto 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.section-2 img {
+    width: 40px;
+    height: 40px;
+}
+.section-3 {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 50px; */
+    flex-wrap: wrap;
+    margin: 44px auto 70px;
+    padding: 0 20px;
+    row-gap: 35px;
+    font-weight: 700;
+}
+.div-1 ul {
+    margin-right: 30px;
+}
+.div-1 ul li {
+    margin-bottom: 15px;
+}
+li {
+    list-style: none;
+}
+.section-4 {
+    /* max-width: 1108px; */
+    display: flex;
+    justify-content: center;
+    column-gap: 95px;
+    /* margin-bottom: 60px; */
+    padding: 0 20px;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+}
+.top-ser {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    row-gap: 10px;
+}
+/* Media Query starts */
+@media screen and (max-width: 720px) {
+    .content-1 {
+        justify-content: flex-start;
+    }
+    .section-4 {
+        flex-direction: column-reverse;
+    }
+    .services {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #DCDCDC;
+    }
+    .top-ser {
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .logo p {
+        margin-top: 20px;
+    }
+}

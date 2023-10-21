@@ -40,6 +40,55 @@
     padding: 21px 56px;
 }
 
+/* Middle Section Started  */
+.how-to-shop-sec {
+    margin: 100px auto;
+    max-width: 1024px;
+    padding: 0px 20px;
+}
+.howtoshop-text {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+    background-color: #F2F5FA;
+}
+.howtoshop-content {
+    display: flex;
+    justify-content: center;
+    padding: 72px 20px;
+    text-align: center;
+    align-items: center;
+    column-gap: 20px;
+    border: 2px solid #F2F5FA;
+}
+.shop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.shop-content > img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+}
+.approved-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.shop-now-btn {
+    color: #0070E0;
+    font-weight: 700;
+    cursor: pointer;
+}
+.lower-bottom-sect-desk > img {
+    width: 100%;
+}
+.lower-bottom-sect-mob > img {
+    width: 100%;
+}
 /* Media Query */
 
 @media (max-width: 640px) {
@@ -75,5 +124,45 @@
         justify-content: center;
         padding: 10px 20px;
     }
+   
     
+}
+
+/* Media query for how to shop section  */
+
+@media (max-width: 720px) {
+
+    .howtoshop-text {
+        padding: 20px 0;
+    }
+    .howtoshop-content {
+        padding: 20px 20px;
+        display: grid;
+        justify-content: flex-start;
+        row-gap: 20px;
+        text-align: left;
+    }
+    .shop-content {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .shop-content > img{
+        margin: 0;
+        margin-right: 20px;
+    }
+    .approved-text {
+        margin-top: 24px;
+    }
+    .lower-bottom-sect-desk {
+        display: none;
+    }
+    .how-to-shop-sec {
+        margin: 40px 0;
+    }
+}
+@media (min-width: 720px) {
+    .lower-bottom-sect-mob {
+        display: none;
+    }
 }

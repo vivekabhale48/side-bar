@@ -7,6 +7,13 @@ const Header2 = () => {
   const [openPartner, setPartner] = useState(false);
   const [login, setlogin] = useState(false);
 
+  if(openHeader) {
+    document.body.style.overflowY = "hidden";
+  }
+  else {
+    document.body.style.overflowY = "auto";
+  }
+
   return (
     <div className='Header-Mobile'>
       <div className="content-header">

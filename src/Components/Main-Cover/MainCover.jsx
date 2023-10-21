@@ -1,5 +1,6 @@
 import React from 'react'
 import './MainCover.css'
+import { Link } from 'react-router-dom'
 const MainCover = () => {
   return (
     <div className='landing-page'>
@@ -10,7 +11,7 @@ const MainCover = () => {
         <div className='cover-content'>
           <h1>Shop Ashley Furniture with Acima</h1>
           <h3>Get approved to lease up to $5,000 in merchandise with free delivery*</h3>
-          <a href="" className='app-btn btn-1'>Get the App</a>
+          <a href="/Category" className='app-btn btn-1'>Get the App</a>
         </div>
       </div>
 
@@ -34,7 +35,7 @@ const MainCover = () => {
               </div>
             </div>
             <div className="approved-text">
-              <span>Already approved ? <a className='shop-now-btn'>Shop now</a></span>
+              <span>Already approved ? <Link className='shop-now-btn' to='/Category'>Shop now</Link></span>
             </div>
         </div>
       </div>

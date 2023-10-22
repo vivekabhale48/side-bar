@@ -12,12 +12,12 @@
 .side-header {
     z-index: 9999;
     width: 297px;
-    height: 100vh;
+    height: calc(100vh - 76px);
     background-color: #eee;
     position: absolute;
     transform: translateX(-100%);
     transition: all 0.3s ease;
-    /* top: 0; */
+    overflow-y: scroll;
 }
 .active-mobile-header {
     transform: translateX(0);

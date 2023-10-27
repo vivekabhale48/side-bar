@@ -1,0 +1,36 @@
+.mainCatName {
+    padding: 40px 0px 32px;
+    display: flex;
+    justify-content: center;
+}
+.subCatSection {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.subCatImg {
+    width: 340px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.subCatSection img {
+    object-fit: scale-down;
+    width: 100%;
+}
+.subCatName {
+    position: absolute;
+    background: #fff;
+    padding: 18px 20px;
+    border-radius: 30px;
+    box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.30);
+}
+.subCatName a {
+    color: #F75200;
+    font-weight: 700;
+}

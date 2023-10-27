@@ -7,20 +7,26 @@ const Category = () => {
     <div className='container'>
       {
         HomePageRoute.map((e,i)=>{
-          console.log(e)
           return (
             <div key={i}>
-              <h1>{e.categoryName}</h1>
-              {
-                e.subCategory.map((subCat)=> {
-                  console.log(subCat);
-                  return (
-                    <div>
-                      <img src={subCat.subCatImg} alt="" />
-                    </div>
-                  )
-                })
-              }
+              <h1 className='mainCatName'>Shop by {e.categoryName}</h1>
+              <div className='subCatSection'>
+                {
+                  e.subCategory.map((subCat, index)=> {
+                    return (
+                      <>
+                        <div key={index} className='subCatImg'>
+                          <img src={subCat.subCatImg} alt="" />
+                          <div className='subCatName'>
+                            <a href="">{subCat.subCatName}</a>
+                          </div>
+                        </div>
+                      </>
+                      
+                    )
+                  })
+                }
+              </div>
             </div>
             
           )

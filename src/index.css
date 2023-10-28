@@ -14,3 +14,15 @@
   max-width: 1044px;
   margin: 0 auto;
 }
+.d-flex {
+  display: flex;
+}
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}

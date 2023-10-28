@@ -1,4 +1,4 @@
-const Category = [{
+const HomePageRoute = [{
     categoryName: 'Room',
     subCategory: [{
         subCatId: 1,
@@ -31,6 +31,34 @@ const Category = [{
         subCatImg: 'assets/CategoryLanding/ShopbyRoom/HomeOffice.svg'
     }
 ]
-}]
+}
+]
 
-export default Category;
+const MiddleCategorySection = {
+    middlecategoryName: 'Category',
+    shopAll: 'Shop All',
+    optionSubCategory: [{
+        LivingRoomsSec: 'Living Rooms',
+        middleSubCat: 
+        [
+            {
+                middleSubCatName: 'Living Rooms Set',
+                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/LivingSet.svg'
+            },
+            {
+                middleSubCatName: 'Sofas & Sectionals',
+                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/Sofa.svg'
+            },
+            {
+                middleSubCatName: 'Recliners & Accent Chairs',
+                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/Recliners.svg'
+            },
+            {
+                middleSubCatName: 'Coffee & End Tables',
+                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/LivingSet.svg'
+            },
+        ]
+    }]
+}
+
+export { HomePageRoute, MiddleCategorySection };

@@ -1,18 +1,18 @@
 import React from 'react'
 import './Category.css'
-import HomePageRoute from '../../Routes/HomePageRoutes'
+import { HomePageRoute, MiddleCategorySection } from '../../Routes/HomePageRoutes'
 
 const Category = () => {
   return (
     <div className='container'>
       {
-        HomePageRoute.map((e,i)=>{
+        HomePageRoute.map((e, i) => {
           return (
             <div key={i}>
               <h1 className='mainCatName'>Shop by {e.categoryName}</h1>
               <div className='subCatSection'>
                 {
-                  e.subCategory.map((subCat, index)=> {
+                  e.subCategory.map((subCat, index) => {
                     return (
                       <>
                         <div key={index} className='subCatImg'>
@@ -22,14 +22,29 @@ const Category = () => {
                           </div>
                         </div>
                       </>
-                      
+
                     )
                   })
                 }
               </div>
             </div>
-            
+
           )
+        })
+      }
+      <h1 className='mainCatName'>Shop by {MiddleCategorySection.middlecategoryName}</h1>
+      {
+        MiddleCategorySection.optionSubCategory.map((midCat) => {
+          console.log(midCat)
+          return (
+            <>
+              <div className='subCatHeading justify-content-between'>
+                <h3>{midCat.LivingRoomsSec}</h3>
+                <span>{MiddleCategorySection.shopAll}</span>
+              </div>
+            </>
+          )
+
         })
       }
     </div>

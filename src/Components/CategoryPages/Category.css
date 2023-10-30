@@ -22,6 +22,8 @@
 .subCatSection img {
     object-fit: scale-down;
     width: 100%;
+    height: 175px;
+
 }
 .subCatName {
     position: absolute;
@@ -57,4 +59,22 @@
     justify-content: center;
     align-items: center;
     padding: 8px 0px
+}
+
+@media (max-width: 1100px) {
+    .subCatSection {
+        grid-template-columns: 1fr 1fr;
+    }
+    .subCatImg {
+        width: 100%;
+    }
+    .subCatImg > img {
+        object-fit: cover;
+    }
+}
+@media (max-width: 540px) {
+    .subCatSection {
+        grid-template-columns: 1fr;
+    }
+    
 }

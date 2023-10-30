@@ -84,6 +84,34 @@ const MiddleCategorySection = {
                 middleSubCatImg: 'assets/CategoryLanding/Bedrooms/KidsFurniture.svg'
             },
         ]
+    },
+    {
+        RoomsSec: 'Dining Rooms',
+        middleSubCat:
+        [
+            {
+                middleSubCatName: 'Dining Room Sets',
+                middleSubCatImg: 'assets/CategoryLanding/DiningandHome/DiningRoomSet.svg'
+            },
+            {
+                middleSubCatName: 'BarStools',
+                middleSubCatImg: 'assets/CategoryLanding/DiningandHome/BarStools.svg'
+            },
+        ]
+    },
+    {
+        RoomsSec: 'Home Office',
+        middleSubCat:
+        [
+            {
+                middleSubCatName: 'Desks',
+                middleSubCatImg: 'assets/CategoryLanding/DiningandHome/Desks.svg'
+            },
+            {
+                middleSubCatName: 'Office Chairs',
+                middleSubCatImg: 'assets/CategoryLanding/DiningandHome/OfficeChairs.svg'
+            },
+        ]
     }
 ]
 }

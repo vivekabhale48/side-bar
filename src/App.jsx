@@ -3,6 +3,7 @@ import Header from './Components/Header1/Header'
 import MainCover from './Components/Main-Cover/MainCover'
 import Footer from './Components/Footer/Footer'
 import Category from './Components/CategoryPages/Category';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   createBrowserRouter,
   RouterProvider,

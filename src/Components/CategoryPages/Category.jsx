@@ -39,8 +39,24 @@ const Category = () => {
           return (
             <>
               <div className='subCatHeading justify-content-between'>
-                <h3>{midCat.LivingRoomsSec}</h3>
+                <h3>{midCat.RoomsSec}</h3>
                 <span>{MiddleCategorySection.shopAll}</span>
+              </div>
+              <div className='midSection2 align-center-between'>
+                {
+                  midCat.middleSubCat.map((midSubCat)=>{
+                    return(
+                      <div className="midSubCat col-sm-3">
+                        <div className='midSubCatPhotos d-flex-center'> 
+                          <img src={midSubCat.middleSubCatImg} alt="" />
+                        </div>
+                        <div className='midSubCatName'>
+                          <span>{midSubCat.middleSubCatName}</span>
+                        </div>
+                      </div>
+                    )
+                  })
+                }
               </div>
             </>
           )

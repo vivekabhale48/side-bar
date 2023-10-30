@@ -38,7 +38,7 @@ const MiddleCategorySection = {
     middlecategoryName: 'Category',
     shopAll: 'Shop All',
     optionSubCategory: [{
-        LivingRoomsSec: 'Living Rooms',
+        RoomsSec: 'Living Rooms',
         middleSubCat: 
         [
             {
@@ -51,14 +51,41 @@ const MiddleCategorySection = {
             },
             {
                 middleSubCatName: 'Recliners & Accent Chairs',
-                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/Recliners.svg'
+                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/Recliner.svg'
             },
             {
                 middleSubCatName: 'Coffee & End Tables',
-                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/LivingSet.svg'
+                middleSubCatImg: 'assets/CategoryLanding/LivingRooms/Coffee.svg'
             },
         ]
-    }]
+    },
+    {
+        RoomsSec: 'Bedrooms',
+        middleSubCat:
+        [
+            {
+                middleSubCatName: 'Bedroom Furniture',
+                middleSubCatImg: 'assets/CategoryLanding/Bedrooms/BedroomFurniture.svg'
+            },
+            {
+                middleSubCatName: 'Mattresses',
+                middleSubCatImg: 'assets/CategoryLanding/Bedrooms/Mattresses.svg'
+            },
+            {
+                middleSubCatName: 'Bed Frames',
+                middleSubCatImg: 'assets/CategoryLanding/Bedrooms/BedFrames.svg'
+            },
+            {
+                middleSubCatName: 'Beds',
+                middleSubCatImg: 'assets/CategoryLanding/Bedrooms/Beds.svg'
+            },
+            {
+                middleSubCatName: 'Kids Furniture',
+                middleSubCatImg: 'assets/CategoryLanding/Bedrooms/KidsFurniture.svg'
+            },
+        ]
+    }
+]
 }
 
 export { HomePageRoute, MiddleCategorySection };

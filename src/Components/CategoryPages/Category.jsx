@@ -1,12 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Category.css'
-import { HomePageRoute, MiddleCategorySection } from '../../Routes/HomePageRoutes'
+import { MiddleCategorySection } from '../../Routes/HomePageRoutes'
 
 const Category = () => {
+
+  // Api call started
+  
+  const [data, setdata] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:3000/getHomePage')
+    .then((response)=> response.json())
+    .then((data)=>{
+      setdata(data);
+    })
+    .catch((e)=> console.error('Api failed', e));
+  }, []);
+
+  // Api call ended
+
   return (
     <div className='container'>
       {
-        HomePageRoute.map((e, i) => {
+        data.map((e, i) => {
           return (
             <div key={i}>
               <h1 className='mainCatName'>Shop by {e.categoryName}</h1>
@@ -35,7 +51,6 @@ const Category = () => {
       <h1 className='mainCatName'>Shop by {MiddleCategorySection.middlecategoryName}</h1>
       {
         MiddleCategorySection.optionSubCategory.map((midCat) => {
-          console.log(midCat)
           return (
             <>
               <div className='subCatHeading justify-content-between'>
@@ -44,9 +59,9 @@ const Category = () => {
               </div>
               <div className='midSection2 align-center-between'>
                 {
-                  midCat.middleSubCat.map((midSubCat)=>{
+                  midCat.middleSubCat.map((midSubCat, i)=>{
                     return(
-                      <div className="midSubCat col-sm-3">
+                      <div key={i} className="midSubCat col-sm-3">
                         <div className='midSubCatPhotos d-flex-center'> 
                           <img src={midSubCat.middleSubCatImg} alt="" />
                         </div>

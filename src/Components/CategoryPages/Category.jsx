@@ -5,7 +5,7 @@ import { MiddleCategorySection } from '../../Routes/HomePageRoutes'
 const Category = () => {
 
   // Api call started
-  
+
   const [data, setdata] = useState([]);
 
   useEffect(()=>{
@@ -22,23 +22,20 @@ const Category = () => {
   return (
     <div className='container'>
       {
-        data.map((e, i) => {
+        data.map((e) => {
           return (
-            <div key={i}>
+            <div key={e._id}>
               <h1 className='mainCatName'>Shop by {e.categoryName}</h1>
               <div className='subCatSection'>
                 {
-                  e.subCategory.map((subCat, index) => {
+                  e.subCategory.map((subCat) => {
                     return (
-                      <>
-                        <div key={index} className='subCatImg'>
-                          <img src={subCat.subCatImg} alt="" />
-                          <div className='subCatName'>
-                            <a href="">{subCat.subCatName}</a>
-                          </div>
+                      <div key={subCat._id} className='subCatImg'>
+                        <img src={subCat.subCatImg} alt="" />
+                        <div className='subCatName'>
+                          <a href="">{subCat.subCatName}</a>
                         </div>
-                      </>
-
+                      </div>
                     )
                   })
                 }

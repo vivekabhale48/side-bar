@@ -68,7 +68,7 @@
     top: 35px;
 }
 .dropdown-elements > a {
-    color: #000;
+    color: #000 !important;
 }
 
 @media (max-width: 1024px) {
